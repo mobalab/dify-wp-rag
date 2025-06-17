@@ -1,0 +1,5 @@
+path: "/uwu/dify-wp-rag/uwu"
+method: "GET"
+extra:
+  python:
+    source: "endpoints/dify-wp-rag.py"
