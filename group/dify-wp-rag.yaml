@@ -1,14 +1,25 @@
 settings:
-  - name: api_key
+  - name: wp_rag_site_id
+    type: text-input
+    required: true
+    label:
+      en_US: Site ID on WP RAG
+      zh_Hans: Site ID on WP RAG
+      pt_BR: Site ID on WP RAG
+    placeholder:
+      en_US: Please input the site ID on WP RAG
+      zh_Hans: 请输入你的 the site ID on WP RAG
+      pt_BR: Please input the site ID on WP RAG
+  - name: wp_rag_api_key
     type: secret-input
     required: true
     label:
-      en_US: API key
-      zh_Hans: API key
-      pt_BR: API key
+      en_US: WP RAG API key
+      zh_Hans: WP RAG API key
+      pt_BR: WP RAG API key
     placeholder:
-      en_US: Please input your API key
-      zh_Hans: 请输入你的 API key
-      pt_BR: Please input your API key
+      en_US: Please input your WP RAG API key
+      zh_Hans: 请输入你的 WP RAG API key
+      pt_BR: Please input your WP RAG API key
 endpoints:
   - endpoints/dify-wp-rag.yaml
