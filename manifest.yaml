@@ -34,7 +34,7 @@ resource:
       enabled: false
     storage:
       enabled: false
-      size: 0
+      size: 1024
 plugins:
   endpoints:
     - group/dify-wp-rag.yaml
