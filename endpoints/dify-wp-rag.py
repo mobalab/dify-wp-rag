@@ -27,8 +27,7 @@ class DifyWpRagEndpoint(Endpoint):
 
         base_url = 'https://wp-rag.mobalab.net'
         url = base_url + '/api/sites/' + site_id + '/posts/search'
-        # Note that top_k and score_threshold are ignored at this moment.
-        params = {'q': query, 'top_k': top_k, 'score_threshold': score_threshold}
+        params = {'q': query, 'limit': top_k, 'score_threshold': score_threshold}
         headers = {'Content-Type': 'application/json', 'X-Api-Key': api_key}
 
         response = requests.get(url, params, headers=headers)
@@ -36,12 +35,12 @@ class DifyWpRagEndpoint(Endpoint):
         for record in response.json()['search_results']:
             result = {
                 "metadata": {
-                    "path": record['url'],
+                    "path": record['post']['url'],
                     "description": ''
                 },
-                "score": 0.8, #TODO Not implemented on the API side
-                "title": record['title'],
-                "content": record['body']
+                "score": record['score'],
+                "title": record['post']['title'],
+                "content": record['post']['content']
             }
             results.append(result)
 
