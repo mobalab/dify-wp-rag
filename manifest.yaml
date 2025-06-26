@@ -3,10 +3,10 @@ type: plugin
 author: k4200
 name: dify-wp-rag
 label:
-  en_US: dify-wp-rag
-  ja_JP: dify-wp-rag
-  zh_Hans: dify-wp-rag
-  pt_BR: dify-wp-rag
+  en_US: WP RAG
+  ja_JP: WP RAG
+  zh_Hans: WP RAG
+  pt_BR: WP RAG
 description:
   en_US: Extension that connects to WP RAG API server
   ja_JP: Extension that connects to WP RAG API server
@@ -34,7 +34,7 @@ resource:
       enabled: false
     storage:
       enabled: false
-      size: 0
+      size: 1024
 plugins:
   endpoints:
     - group/dify-wp-rag.yaml
