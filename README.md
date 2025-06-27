@@ -1,6 +1,6 @@
 ## dify-wp-rag
 
-**Author:** k4200
+**Author:** mobalab
 **Version:** 0.0.1
 **Type:** extension
 

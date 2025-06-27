@@ -1,6 +1,6 @@
 version: 0.0.1
 type: plugin
-author: k4200
+author: mobalab
 name: dify-wp-rag
 label:
   en_US: WP RAG
